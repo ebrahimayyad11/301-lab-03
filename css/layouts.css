@@ -1,0 +1,400 @@
+
+
+.home_imgs{
+    box-sizing: border-box;
+    /* float: left; */
+    padding: 2px;
+    width: 20%;
+    transition: all 0.4s ease-in-out;
+}
+img{
+    width: 140px;
+    height: 140px;
+}
+
+footer{
+    width: 800px;
+    text-align: center;
+    display: block;
+}
+header{
+    text-align: center;
+}
+.UniWhal {
+    background-color: rgb(226, 59, 87);
+    display: inline-block;
+    width: 20%;
+    height: 250px;
+    overflow: hidden;
+    margin-left: 5%;
+  }
+  .UniWhal h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .UniWhal p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  div img {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .Rhino {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Rhino h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Rhino p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+
+  .Unicorn {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Unicorn h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Unicorn p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .UniLego {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .UniLego h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .UniLego p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Basically {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Basically h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Basically p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .truth {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .truth h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .truth p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Cera {
+    background-color: rgb(226, 59, 87);
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Cera h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Cera p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Narwhal {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Narwhal h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Narwhal p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Believe {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Believe h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Believe p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Markhor {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Markhor h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Markhor p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Baby {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Baby h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Baby p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .markhor {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .markhor h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .markhor p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Mouflon {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Mouflon h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Mouflon p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Happy {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Happy h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Happy p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Serious {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Serious h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Serious p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Addax {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Addax h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Addax p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Horned {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Horned h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Horned p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .Smaug {
+    background-color: rgb(226, 59, 87);;
+    display: inline-block;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .Smaug h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .Smaug p {
+    font-size: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  
