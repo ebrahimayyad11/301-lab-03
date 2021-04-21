@@ -1,15 +1,17 @@
-var allData = [];
+
 var selectedKeyword;
 function ajax() {
+  let allData = [];
   $.ajax({
     type: 'Get',
-    url: 'data/page-2.json',
+    url: 'data/page-1.json',
     dataType: 'text',
     success: function (data) {
       allData = JSON.parse(data);
-      addAnimals(allData);
-      addImgs(allAnimals);
-      select(allAnimals);
+      allData = addAnimals(allData);
+      localStorage.setItem('allData' , JSON.stringify(allData));
+      addImgs(allData);
+      select(allData);
       checkKeyword();
     },
     error: function () {
@@ -20,15 +22,17 @@ function ajax() {
 
 
 function ajax2() {
+  let allData = [];
   $.ajax({
     type: 'Get',
     url: 'data/page-2.json',
     dataType: 'text',
     success: function (data) {
       allData = JSON.parse(data);
-      addAnimals(allData);
-      addImgs(allAnimals);
-      select(allAnimals);
+      allData = addAnimals(allData);
+      localStorage.setItem('allData' , JSON.stringify(allData));
+      addImgs(allData);
+      select(allData);
       checkKeyword();
     },
     error: function () {
@@ -36,6 +40,8 @@ function ajax2() {
     },
   });
 }
+
+ajax();
 
 $('#page1').on('click', function(){
   ajax();
@@ -46,7 +52,6 @@ $('#page2').on('click', function(){
 });
 
 
-var allAnimals = [];
 
 function Animal(arr) {
   this.image_url = arr.image_url;
@@ -54,10 +59,10 @@ function Animal(arr) {
   this.description = arr.description;
   this.keyword = arr.keyword;
   this.horns = arr.horns;
-  allAnimals.push(this);
 }
 
 function select (arr){
+  $('select').empty();
   let newArr = [];
   arr.forEach(item => {
     if (newArr.length === 0){
@@ -79,9 +84,11 @@ function select (arr){
 }
 
 function addAnimals (arr){
+  let newArr = [];
   arr.forEach(item => {
-    new Animal(item);
+    newArr.push(new Animal(item));
   });
+  return newArr;
 }
 
 let knowKeyword = (arr, keyword) => {
@@ -101,7 +108,7 @@ let knowKeyword = (arr, keyword) => {
 function checkKeyword (){
   $('select.keyword').change(function () {
     selectedKeyword = $(this).children('option:selected').val();
-
+    let allAnimals = JSON.parse(localStorage.getItem('allData'));
     switch (selectedKeyword) {
     case 'narwhal': {
       addImgs(knowKeyword(allAnimals, 'narwhal'));
@@ -151,10 +158,17 @@ function checkKeyword (){
   });
 }
 
+Animal.prototype.addAnimal = function(){
+  let imgTemplate = $('#imgTemplate').html();
+  let imgMergeTemplate = Mustache.render(imgTemplate,this);
+  $('#main_container').append(imgMergeTemplate);
+};
 
 const addImgs = (arr => {
   $('#main_container').empty();
+  console.log(arr);
   arr.forEach(item => {
+    item.addAnimal();
     // let div = $('<div> </div>').attr('class' ,item.title);
     // let title = $('<h2> </h2>').text(item.title);
     // let img = $('<img>').attr('src' , item.image_url);
@@ -162,13 +176,8 @@ const addImgs = (arr => {
     // let description = $('<p> </p>').text('description: '+item.description);
     // div.append(title,img,horns,description);
     // $('#main_container').append(div);
-    item.addAnimal();
   });
 });
 
 
-Animal.prototype.addAnimal = function(){
-  let imgTemplate = $('#imgTemplate').html();
-  let imgMergeTemplate = Mustache.render(imgTemplate,this);
-  $('#main_container').append(imgMergeTemplate);
-};
+
